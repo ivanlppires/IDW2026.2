@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulário - Parte 2</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+    <h1>Formulário - Parte 2</h1>
+    <p>Radio, Checkbox, Select (options), textarea</p>
+    <form action="https://ivanpires.dev/processa.php" method="post">
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>Recheio do sanduíche:</p>
+            <input type="radio" id="frango" name="recheio" value="frango">
+            <label for="frango">Frango</label><br>
+            <input type="radio" id="carne" name="recheio" value="carne">
+            <label for="carne">Carne</label><br>
+            <input type="radio" id="vegetariano" name="recheio" value="vegetariano">
+            <label for="vegetariano">Vegetariano</label><br>
+            <p>Adicionais:</p>
+            <input type="checkbox" id="queijo" name="queijo">
+            <label for="queijo">Queijo</label><br>
+            <input type="checkbox" id="bacon" name="bacon">
+            <label for="bacon">Bacon</label><br>
+            <input type="checkbox" id="ovo" name="ovo">
+            <label for="ovo">Ovo</label><br>
+            <p>Bebida:</p>
+            <label for="bebida">Escolha sua bebida:</label>
+            <select name="bebida" id="bebida">
+                <optgroup label="Refrigerantes">
+                    <option value="coca">Coca-Cola</option>
+                    <option value="pepsi">Pepsi</option>
+                    <option value="guarana">Guaraná</option>
+                </optgroup>
+                <optgroup label="Sucos">
+                    <option value="suco-laranja">Suco de Laranja</option>
+                    <option value="suco-uva">Suco de Uva</option>
+                    <option value="suco-abacaxi">Suco de Abacaxi</option>
+                </optgroup>
+            </select>
+            <p>Observações:</p>
+            <textarea name="observacoes" id="observacoes" rows="4" cols="50"
+            placeholder="Digite suas observações aqui..."></textarea>
+=s        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
