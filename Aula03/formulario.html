@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang='pt-br'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Formulário</title>
     <link rel='stylesheet' href='main.css'>
 </head>
+
 <body>
-     <nav>
-        <a href="index.html">Página Inicial</a> | 
+    <nav>
+        <a href="index.html">Página Inicial</a> |
         <a href="formulario.html">Formulário</a>
     </nav>
     <hr>
     <main>
         <h1>Formulário</h1>
         <form action="http://localhost/processa.php" method="post">
-            
+
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="nome">Nome:</label> 
-                <input id="nome" type="text" placeholder="Digite seu nome">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome">
                 <br>
                 <label for="email">E-mail:</label>
-                <input id="email" type="email" placeholder="Digite seu e-mail">
+                <input id="email" name="email" type="email" placeholder="Digite seu e-mail">
                 <br>
-                <label for="telefone">Número de Telefone:</label>
-                <input id="telefone" type="tel" placeholder="Digite seu número de telefone">
+                <label for="telefone">Telefone:</label>
+                <input id="telefone" name="telefone" type="tel" placeholder="Digite seu número de telefone">
+                <br>
+                <label for="cpf">CPF:</label>
+                <input id="cpf" name="cpf" type="text" placeholder="Digite seu CPF" minlength="11" maxlength="11"
+                    required>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
             </fieldset>
             <fieldset>
                 <legend>Endereço</legend>
@@ -34,4 +43,5 @@
         </form>
     </main>
 </body>
+
 </html>
