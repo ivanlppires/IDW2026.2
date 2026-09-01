@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulário 3</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h1>Formulário 3</h1>
+    <!-- Diferença do datalist para select -->
+     <form action="https://ivanpires.dev/processa.php" method="post">
+        <label for="estados">Estados:</label>
+        <select name="estados" id="estados">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MT" selected>Mato Grosso</option>
+            <option value="PA">Pará</option>
+        </select>
+        <br>
+        <label for="cidade">Cidades:</label>
+        <input type="text" name="cidade" id="cidade" list="listacidades">
+        <datalist id="listacidades">
+            <option value="Sinop">Sinop</option>
+            <option value="Itaúba">Itaúba</option>
+            <option value="Nova Santa Helena">Nova Santa Helena</option>
+            <option value="Terra Nova do Norte">Terra Nova do Norte</option>
+            <option value="Peixoto de Azevedo">Peixoto de Azevedo</option>
+            <option value="Matupá">Matupá</option>
+            <option value="Guarantã do Norte">Guarantã do Norte</option>
+        </datalist>
+        <br>
+        <input type="submit" value="Enviar">
+     </form>
+</body>
+</html>
