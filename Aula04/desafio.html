@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang='pt-br'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>DESAFIO</title>
     <link rel='stylesheet' href='main.css'>
 </head>
-<body>
-    <!-- DESAFIO: 
-        CRIE UMA PÁGINA (LANDPAGE) CONTENDO:
-        - NOME DO EVENTO
-        - TEXTO ALEATÓRIO SIMULANDO INFORMAÇÕES DO EVENTO
-        - INSCRIÇÃO
 
-        A INSCRIÇÃO DEVE CONTER:
-        - NOME, E-MAIL E TELEFONE, ENDEREÇO COM CEP.
-        - ESCOLHER UM MINICURSO (HTML, CSS OU JAVASCRIPT).
-        - SUGESTÃO DE COFFE BREAK (CAFÉ, CHÁ, SUCO, ...)
-        
-        - FAÇA REGEX PARA O CEP E TELEFONE, PARA VALIDAR OS DADOS.
-    -->
+<body>
+    <header id="topo">
+        <h1>Evento de Programação Web</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Início</a> |
+        <a href="#sobre">Sobre o Evento</a> |
+        <a href="#inscricao">Inscrição</a>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao Evento de Programação Web</h2>
+            <p>Participe do nosso evento e aprenda sobre as últimas tendências em desenvolvimento web!</p>
+            <img src="banner.jpg" />
+            <a href="#topo">voltar ao topo</a>
+        </section>
+        <hr>
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <p>O evento contará com palestras, workshops e networking com profissionais da área.</p>
+            <h3>Minicurso HTML</h3>
+            <p>Aprenda os fundamentos do HTML e como criar páginas web interativas.</p>
+            <h3>Minicurso CSS</h3>
+            <p>Aprenda a estilizar páginas web com CSS e criar designs modernos.</p>
+            <h3>Minicurso JavaScript</h3>
+            <p>Aprenda a criar interatividade em páginas web com JavaScript.</p>
+            <a href="#topo">voltar ao topo</a>
+        </section>
+        <hr>
+        <section id="inscricao">
+            <h2>Inscrição</h2>
+            <p>Faça sua inscrição no evento preenchendo o formulário abaixo.</p>
+            <form action="https://ivanpires.dev/proccessa.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br><br>
+                <input type="submit" value="Inscrever">
+            </form>
+            <br><br>
+            <a href="#topo">voltar ao topo</a>
+        </section>
+    </main>
 </body>
+
 </html>
