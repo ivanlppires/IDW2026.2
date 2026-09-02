@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h1>Formulário 4 - Enviando Arquivos</h1>
+    <form 
+    action="https://ivanpires.dev/processa.php" 
+    method="post"
+    enctype="multipart/form-data"
+    >
+        <label for="relatorio">Relatório:</label>
+        <input type="file" name="relatorio" id="relatorio" accept=".pdf">
+        <br>
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto"
+         accept=".jpg, .jpeg, .png" multiple>
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

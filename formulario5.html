@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang='pt-br'>
+ <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulario 5 - patterns</title>
+    <link rel='stylesheet' href='main.css'>
+ </head>
+ <body>
+    <h1>Formulário 5 - patterns (regex)</h1>
+    <!-- CPF: xxx.xxx.xxx-xx -->
+     <form action="https://ivanpires.dev/processa.php"
+     method="post">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" required
+        maxlength="14"
+        minlength="14"
+        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+        >
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+ </body>
+ </html>
