@@ -1,0 +1,56 @@
+/* Tabela de produtos */
+table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid #f0a500;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+    background: linear-gradient(to right, tomato, orange);
+    color: white;
+}
+
+th,
+td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+}
+
+th {
+    font-size: 1.05rem;
+    letter-spacing: 0.03rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff8e1;
+}
+
+tbody tr:hover {
+    background-color: #ffecb3;
+    transform: scale(1.01);
+}
+
+tbody tr:last-child {
+    border-bottom: 0;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #d35400;
+}
+
+td:last-child {
+    font-weight: bold;
+    color: #388e3c;
+}

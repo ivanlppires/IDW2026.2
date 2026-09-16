@@ -6,6 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>INTRODUÇÃO A LAYOUT COM CSS</title>
     <link rel='stylesheet' href='main.css'>
+    <link rel='stylesheet' href='form.css'>
 </head>
 
 <body>
@@ -23,15 +24,24 @@
     </nav>
     <main aria-label="conteúdo principal">
         <section>
-            <h1>Bem-vindo ao nosso site!</h1>
-            <p>Este é um exemplo de layout com CSS. Aqui você pode adicionar informações sobre sua empresa, produtos ou
-                serviços.</p>
-            <p>Explore as diferentes seções do site para saber mais sobre o que oferecemos</p>
+            <h1>Entre em contato</h1>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </p>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+            <p>WhatsApp: <a href="https://wa.me/5565999999999">(65) 99999-9999</a></p>
         </section>
-        <aside>
-            <h2>Anúncio</h2>
-            <img src="imagens/banner.png" alt="Banner promocional" />
-        </aside>
     </main>
     <footer>
         <p>&copy; 2026 Minha Empresa. Todos os direitos reservados.</p>
