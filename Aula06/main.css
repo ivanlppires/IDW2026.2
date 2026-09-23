@@ -1,0 +1,28 @@
+body{
+    background-color:#ffffff;
+}
+
+div{
+    display:block;
+    width: 200px;
+    height: 200px;
+    color: #aa00aa;
+    font-size:2rem;
+    background-color: #ffffff59;
+    border: 4px #00674fBF solid;
+}
+
+/* DESAFIO DIFÍCIL: CORES EM HEXADECIMAL
+
+    Resolva as 3 questões sem usar nomes de cores, rgb() ou hsl().
+    Use somente valores hexadecimais de 6 ou 8 dígitos.
+
+    1) Altere o background do body para um azul-marinho extremamente escuro,
+        com exatamente 90% de opacidade.
+
+    2) Faça o div ter fundo amarelo translúcido com 35% de opacidade e texto
+        roxo-escuro, garantindo contraste suficiente para a leitura.
+
+    3) Crie uma borda no div com 4px, cor verde-esmeralda e 75% de opacidade.
+        A cor deve ser escrita no formato hexadecimal de 8 dígitos.
+*/
