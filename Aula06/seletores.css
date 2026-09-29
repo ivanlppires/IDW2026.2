@@ -1,0 +1,66 @@
+/* SELETORES EM CSS */
+
+/* Seletor de elemento */
+h1{
+    color: #ff0000;
+}
+p{
+    border-bottom: 3px dotted #0000ff;
+}
+/* Seletor de classe (.) */
+div.card{ 
+    background-color: #ffffcc;
+    border-bottom: 5px solid #FFBB22;
+    border-top: 5px solid #ffffee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #888888;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+/* Seletor de ID (#)*/
+h1#titulo{
+    color: #00ff00;
+    font-size: 30px;
+    background-color: #000000;
+    border-left: 5px solid #00ff00;
+    padding-left: 20px;
+}
+
+/* SELETORES COMBINADOS */
+
+/* vários seletores juntos (,) */
+p, div.card{
+    color:#000000;
+}
+
+/* Seletor de classe (.) */
+h1.subtitulo{
+    color: #000000;
+    text-decoration: none; 
+    /* importante: sobrescreve o estilo do seletor p, div.card */
+}
+/* Seletor de filho (>) = elemento que vem diretamente abaixo do pai */
+div.card > h1 {
+    text-shadow: 2px 2px 5px #888888;
+}
+div.card > p {
+    border:none;
+}
+
+/* Seletor de descendente (espaço) = elemento que vem em qualquer nível abaixo do pai */
+div.card  button {
+    cursor: pointer;
+    background-color: #00ff00;
+}
+
+/* Seletor irmãos adjacentes (+) = elemento que vem logo depois do outro */
+div.card >h1 + p {
+    border:20px double #00ff00;
+}
+
+/* Seletor irmãos gerais (~) = elemento que vem depois do outro, mas não necessariamente logo depois */
+div.card > h1 ~ p {
+    background-color: aquamarine;
+}
