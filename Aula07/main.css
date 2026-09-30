@@ -1,0 +1,88 @@
+a{
+    text-decoration:none;
+}
+/* Para formatar pelo atributo usamos o [] */
+a[target="_blank"]{
+    font-style: italic;
+}
+a[href^="https"] {
+    background-color: #FFFF00;
+}
+
+th{
+    background-color:#ccc;
+}
+th[colspan="2"]{
+    background-color:#999;
+}
+/* Para formatar pseudo-classes usamos o : */
+tr:nth-child(odd){ /* odd = ímpar | even = par */
+    background-color:#ff5500;
+}
+tr:nth-child(3){
+    background-color: cyan;
+}
+
+.linha1{
+    background-color:limegreen;
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+td{
+    border-top: 10px solid #00f;
+}
+td:not(.linha1){
+    border-top: 10px solid #f90;
+}
+td:last-child{
+    border-right: 10px solid #f543ff;
+}
+
+/* PSEUDO-CLASSES DE ESTADO */
+a:hover{
+    background-color:#000;
+    color:#fff;
+}
+/* estados do elemento a */
+a:link{
+    color:#00f;
+}
+a:visited{
+    color:pink;
+}
+a:active{
+    color: teal;
+}
+
+tr:hover td{
+    background-color:#000;
+    color:#fff;
+}
+
+input[type="text"]{
+    color:#000;
+}
+input[type="text"]:focus{
+    color:#f00;
+    background-color:#ff0;
+}
+/* PSEUDO ELEMENTOS :: */
+
+a::before{
+    content: "😀 ";
+}
+a::after{
+    content: " 😎";
+}
+p::first-line{
+    color:blue;
+}
+p::first-letter{
+    color:red;
+    font-size: 2em;
+}
