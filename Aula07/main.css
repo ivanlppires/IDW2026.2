@@ -86,3 +86,17 @@ p::first-letter{
     color:red;
     font-size: 2em;
 }
+
+/* TRABALHANDO COM FUNDOS */
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/15/42/32/32/360_F_1542323292_vpxI2BypeFHgSZUvuSRlJLACFn0yzp6d.jpg);
+    color:#fff;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-size: cover;
+    background-attachment: fixed        ;
+    
+}
+p{
+    background-image: linear-gradient(to right,white, transparent, #008);
+}
