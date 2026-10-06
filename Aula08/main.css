@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #f1f1f1;
+    padding:20px;
+}
+nav{
+    background-color: #ccc;
+    color: #fff;
+    display: flex;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover{
+    background-color: #000;
+    color: #fff;
+}
+main{
+    padding: 20px;
+    min-height: 120vh;
+}
