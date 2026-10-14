@@ -32,4 +32,21 @@ section#container {
 
 #container div {
     border: 1px dotted red;
+    display:flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+/* CARD */
+#container div img{
+    object-fit: cover;
+    height:150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#container div p:last-child{
+    font-weight: bold;
+    color: green;
+    font-size:2em;
+    padding:10px;
 }
