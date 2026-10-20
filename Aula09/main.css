@@ -15,6 +15,7 @@ section#container {
     justify-items: stretch;
     gap:5px;
     height: 100vh;
+    
     width: 100vw;
 }
 @media screen and (max-width: 400px) {
