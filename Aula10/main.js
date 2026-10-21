@@ -45,9 +45,49 @@ let num2 = window.prompt('Digite o segundo número:');
 num1 = parseInt(num1);
 num2 = parseInt(num2);
 
-let result = num1 + num2;
+//let result = num1 + num2;
 
-console.log(num1, typeof num1);
-console.log(num2, typeof num2);
+// ESTRUTURA DE DECISÃO if else
+/*
+if (num1 > num2) {
+    console.log('O primeiro número é maior que o segundo.');
+}else {
+    console.log('O segundo número é maior que o primeiro.');
+} 
+*/
+// operadores lógicos
+/*
+    == (igual)
+    != (diferente)
+    > (maior que)
+    < (menor que)
+    >= (maior ou igual a)
+    <= (menor ou igual a)
+    && (e)
+    || (ou)
+*/
+const operacao = window.prompt('Digite a operação (+, -, *, /):');
 
-console.log(result);
+let result = null;
+if (operacao == '+') {
+    result = num1 + num2;
+} else if (operacao == '-') {
+    result = num1 - num2;
+} else if (operacao == '*') {
+    result = num1 * num2;
+} else if (operacao == '/') {
+    result = num1 / num2;
+} else {
+    console.log('Operação inválida.');
+}
+if (result != null)
+    console.log('O resultado é:', result);
+
+/* DESAFIO
+    Crie um programa que o usuário digite 
+    o ano de nasciment e o programa calcule
+    se ele é maior de idade ou não.
+    Pergunte o nome dele e a idade.
+    Ao fina responda com uma mensagem:
+    "Olá, [nome], você tem [idade] anos e é maior de idade."
+*/
