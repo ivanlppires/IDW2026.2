@@ -85,9 +85,10 @@ if (result != null)
 
 /* DESAFIO
     Crie um programa que o usuário digite 
-    o ano de nasciment e o programa calcule
+    o ano de nascimento e o programa calcule
     se ele é maior de idade ou não.
     Pergunte o nome dele e a idade.
-    Ao fina responda com uma mensagem:
+    Ao final responda com uma mensagem:
     "Olá, [nome], você tem [idade] anos e é maior de idade."
 */
+
