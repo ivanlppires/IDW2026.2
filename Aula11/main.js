@@ -1,7 +1,7 @@
 /* DESAFIO */
 
 /*
-    crie um número aleatório entre 1 e 10
+    crie um número aleatório entre 1 e 20: Math.floor(Math.random() * 20) + 1;
     pergunte o usuário QUAL É O NÚMERO
     ele vai tentar loucamente adivinhar o número
     Enquanto ele não acertar, voce vai perguntar infintamente
