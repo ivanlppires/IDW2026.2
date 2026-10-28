@@ -1,32 +1,29 @@
-const num1 = parseInt(prompt("Digite o primeiro número:"));
-const num2 = parseInt(prompt("Digite o segundo número:"));
+/* EXERCÍCIO Notas dinâmicas para alunos dinâmicos */
 
-/* FUNÇÕES */
-
-// Função tradicional
-function soma(a, b) {
-    return a + b;
-}
-
-// Função anônima
-const subtracao = function (a, b) {
-    return a - b;
-};
-
-/* ARROW FUNCTIONS  () => {} */
-
-// Arrow function com 1 linha de código não precisa de chaves nem do return
-const multiplicacao = (a, b) => a * b;
-
-// Arrow function com mais de 1 linha de código precisa de chaves e do return
-const divisao = (a, b) => {
-    if (b == 0) {
-        return 'Não é possível dividir por zero';
+const calculoMedia = (notas) => {
+    let media = 0;
+    for (let nota of notas) {
+        media = media + nota;
     }
-    return a / b;
+    media = media / notas.length; // lenght é o numero de elementos no vetor
+    return media;
 }
 
-console.log('soma', soma(num1, num2));
-console.log('subtração', subtracao(num1, num2));
-console.log('multiplicação', multiplicacao(num1, num2));
-console.log('divisão', divisao(num1, num2));
+const situacaoAluno = (media) => {
+    let resultado = 'Reprovado';
+    if (media >= 6) resultado = 'Aprovado';
+    else if (media >= 4) resultado = 'Recuperação';
+    return resultado;
+}
+let nota = 0;
+const notas = [];
+while (isNaN(nota) == false) {
+    nota = parseFloat(prompt("Digite a nota do aluno"));
+    console.log(nota)
+    if (isNaN(nota) == false) notas.push(nota);
+}
+
+const media = calculoMedia(notas);
+const situacao = situacaoAluno(media);
+
+console.log('A média do aluno é ', media, ' e sua situação é ', situacao);
