@@ -8,3 +8,17 @@
     Depois que ele acertar você vai mostrar quantas tentativas ele precisou
     e ao final mostre todos os números que ele chutou.
 */
+const numerosecreto = Math.floor(Math.random() * 20) + 1;
+let chute = -1;
+let tentativas = 0;
+const chutes = [];
+while(chute != numerosecreto) {
+    chute = parseInt(prompt("Qual é o número?"));
+    chutes.push(chute);
+    tentativas++; // tentativas = tentativas + 1;
+}
+console.log('Parabéns! o número é ', numerosecreto);
+console.log('Tentantivas', tentativas);
+for(let numero of chutes) {
+    console.log('Você chutou', numero);
+}
