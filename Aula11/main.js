@@ -1,24 +1,32 @@
-/* DESAFIO */
+const num1 = parseInt(prompt("Digite o primeiro número:"));
+const num2 = parseInt(prompt("Digite o segundo número:"));
 
-/*
-    crie um número aleatório entre 1 e 20: Math.floor(Math.random() * 20) + 1;
-    pergunte o usuário QUAL É O NÚMERO
-    ele vai tentar loucamente adivinhar o número
-    Enquanto ele não acertar, voce vai perguntar infintamente
-    Depois que ele acertar você vai mostrar quantas tentativas ele precisou
-    e ao final mostre todos os números que ele chutou.
-*/
-const numerosecreto = Math.floor(Math.random() * 20) + 1;
-let chute = -1;
-let tentativas = 0;
-const chutes = [];
-while(chute != numerosecreto) {
-    chute = parseInt(prompt("Qual é o número?"));
-    chutes.push(chute);
-    tentativas++; // tentativas = tentativas + 1;
+/* FUNÇÕES */
+
+// Função tradicional
+function soma(a, b) {
+    return a + b;
 }
-console.log('Parabéns! o número é ', numerosecreto);
-console.log('Tentantivas', tentativas);
-for(let numero of chutes) {
-    console.log('Você chutou', numero);
+
+// Função anônima
+const subtracao = function (a, b) {
+    return a - b;
+};
+
+/* ARROW FUNCTIONS  () => {} */
+
+// Arrow function com 1 linha de código não precisa de chaves nem do return
+const multiplicacao = (a, b) => a * b;
+
+// Arrow function com mais de 1 linha de código precisa de chaves e do return
+const divisao = (a, b) => {
+    if (b == 0) {
+        return 'Não é possível dividir por zero';
+    }
+    return a / b;
 }
+
+console.log('soma', soma(num1, num2));
+console.log('subtração', subtracao(num1, num2));
+console.log('multiplicação', multiplicacao(num1, num2));
+console.log('divisão', divisao(num1, num2));
