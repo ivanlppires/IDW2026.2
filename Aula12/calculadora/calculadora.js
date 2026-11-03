@@ -17,5 +17,4 @@ btnCalcular.addEventListener("click", () => {
         default: res = "Operação inválida"; break;
     }
     resultado.textContent = 'Resultado: ' + res;
-
 });
