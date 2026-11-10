@@ -1,13 +1,22 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     background-color: #0d1c35;
     background-image: url('fundo-mago.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin: 4rem;
+    font-family: "MedievalSharp", cursive;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
