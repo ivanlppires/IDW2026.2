@@ -12,6 +12,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 52vw;
+    gap: 1rem;
 }
 
 h1 {
@@ -20,4 +24,18 @@ h1 {
     margin: 4rem;
     font-family: "MedievalSharp", cursive;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+#numero {
+    /* acessa o elemento pelo id="numero" */
+    margin-left: 4rem;
+    padding: 4rem;
+    font-size: 2rem;
+    background: transparent;
+    border: 10px solid rgba(255, 255, 0, 0.50);
+    color: #fff;
+}
+button{
+    margin-left: 4rem;
+    padding: 2rem;
 }
