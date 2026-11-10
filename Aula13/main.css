@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #0d1c35;
+    background-image: url('fundo-mago.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
