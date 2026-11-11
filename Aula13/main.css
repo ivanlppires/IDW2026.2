@@ -22,6 +22,7 @@ h1 {
     color: #ffd700;
     font-size: 4rem;
     margin: 4rem;
+    margin-bottom: 2rem;
     font-family: "MedievalSharp", cursive;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
@@ -29,8 +30,8 @@ h1 {
 #numero {
     /* acessa o elemento pelo id="numero" */
     margin-left: 4rem;
-    padding: 4rem;
-    font-size: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
     background: transparent;
     border: 10px solid rgba(255, 255, 0, 0.50);
     color: #fff;
@@ -42,12 +43,50 @@ h1 {
     color: #555;
     text-transform: uppercase;
     margin-left: 4rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 25px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: linear-gradient(to right, #0d1c35, #ffffffaa, #0d1c3533);
 }
 
 #botao:hover {
     color: #0d1c35;
+}
+
+a{
+    margin-left: 4rem;
+    color: #fff;
+    padding:1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border:1px solid #fff;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Impact';    
+}
+
+#escolhidos{
+    margin-left: 4rem;
+    color: #f00;
+    font-size: 2rem;
+    font-family: 'Impact';
+}
+#escolhidos::before {
+    content: "❌ ";
+}
+#imagem{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: girar 5s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
