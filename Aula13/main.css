@@ -35,11 +35,19 @@ h1 {
     border: 10px solid rgba(255, 255, 0, 0.50);
     color: #fff;
 }
-button{
-    color: #0d1c35;
+
+#botao {
+    cursor: pointer;
+    font-family: 'Impact';
+    color: #555;
+    text-transform: uppercase;
     margin-left: 4rem;
-    padding: 1.8rem;
+    padding: 2rem;
     border-radius: 25px;
     font-size: 2rem;
-    background: linear-gradient(to right,#0d1c35,  #ffffffaa, #0d1c3533);
+    background: linear-gradient(to right, #0d1c35, #ffffffaa, #0d1c3533);
+}
+
+#botao:hover {
+    color: #0d1c35;
 }
