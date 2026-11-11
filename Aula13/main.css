@@ -19,11 +19,11 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffd700;
     font-size: 4rem;
     margin: 4rem;
     font-family: "MedievalSharp", cursive;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 #numero {
@@ -36,6 +36,10 @@ h1 {
     color: #fff;
 }
 button{
+    color: #0d1c35;
     margin-left: 4rem;
-    padding: 2rem;
+    padding: 1.8rem;
+    border-radius: 25px;
+    font-size: 2rem;
+    background: linear-gradient(to right,#0d1c35,  #ffffffaa, #0d1c3533);
 }
