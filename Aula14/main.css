@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #444;
+}
+h1:nth-child(1){
+    text-align:center;
+    font-size:8rem;
+    background: linear-gradient(to right, #0055ff, #9d00ff);
+    color:white;
+    text-shadow: 0 0 10px #000;
+}
+input{
+    width:100%;
+    padding:3rem;
+    font-size:3rem;
+    border: 10px double #0055ff;
+}
+button{
+    width:100%;
+    padding:3rem;
+    font-size:3rem;
+    cursor:pointer;
+}
+h1#resposta{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:20em;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+}
+img#imagem{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    z-index: 0;
+    display:none;
+}
