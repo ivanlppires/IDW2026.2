@@ -22,14 +22,49 @@ form.addEventListener('submit', (event) => {
         alert('Por favor, informe a data de nascimento corretamente');
         form.nascimento.value = '';
         form.nascimento.focus();
+        return;
     }
     /* VALIDA EMAIL */
     const email = form.email.value;
-    if(email == '' ||
+    if (email == '' ||
         !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)
     ) {
         alert('Por favor, informe o email corretamente');
         form.email.value = '';
         form.email.focus();
+        return;
+    }
+    if (
+        form.cep.value == ''
+        || form.rua.value == ''
+        || form.bairro.value == ''
+        || form.cidade.value == ''
+        || form.estado.value == ''
+        || form.numero.value == ''
+    ) {
+        alert('Por favor, preencha o endereço corretamente');
+        return;
+    }
+    form.submit();
+});
+
+const campoCep = document.querySelector('#cep');
+campoCep.addEventListener('input', async (event) => {
+
+    campoCep.value = campoCep.value.replace(/\D/g, '');
+
+    const cep = campoCep.value;
+    if (cep.length == 8) {
+        const result = await fetch('https://viacep.com.br/ws/' + cep + '/json/');
+        const data = await result.json();
+        form.rua.value = data.logradouro;
+        form.bairro.value = data.bairro;
+        form.cidade.value = data.localidade;
+        form.estado.value = data.uf;
+    } else {
+        form.rua.value = '';
+        form.bairro.value = '';
+        form.cidade.value = '';
+        form.estado.value = '';
     }
 });
